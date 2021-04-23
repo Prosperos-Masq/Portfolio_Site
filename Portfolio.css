@@ -1,0 +1,101 @@
+body{
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  background-image: linear-gradient(100deg, white, #D0F7D1);
+  border: 2px dotted black;
+  flex-grow: 1;
+  align-items: center;
+  padding: 15px;
+}
+
+.first-container {
+  height: 100vh;
+  background-image: linear-gradient(80deg, white, #D0F7D1);
+}
+
+.second-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  height: 90vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  max-width: 300px;
+  border-radius: 10px;
+  padding: 15px;
+  flex-grow: 1;
+  justify-content: center;
+  background-color: white;
+}
+
+.third-container {
+  margin-top: 10px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #8be8cc;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+}
+
+.first-header {
+  margin: 3.2em 0 0 0;
+  font-size: 5em;
+}
+
+.second-header{
+  font-size: 4em;
+}
+
+ul {
+  line-height: 30px;
+  
+}
+
+.hobbies {
+  max-width: 250px;
+  padding-bottom: 10px;
+}
+
+.center {
+  margin-right: 20px;
+}
+
+.column:hover {
+  transform: scale(1.2);
+}
+
+.link-holder {
+  
+}
+
+.github-pic {
+  width: 15%;
+}
+
+.codepen-pic {
+  width: 12%;
+}
+
+.discord-pic {
+  width: 12%;
+}
+
+.link-pic {
+  width: 15%;
+}
