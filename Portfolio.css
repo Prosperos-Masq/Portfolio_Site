@@ -8,22 +8,31 @@ body{
 .about-me {
   display: flex;
   flex-direction: column;
-  background-color: red;
-  background-image: linear-gradient(100deg, white, #D0F7D1);
-  border: 2px dotted black;
-  flex-grow: 1;
+/*   background-image: linear-gradient(0deg, white, #D0F7D1); */
+  border: 2px solid black;
+  width: 95%;
   align-items: center;
+  font-size: 1.3em;
   padding: 15px;
+  margin: auto;
 }
 
 .first-container {
   height: 100vh;
-  background-image: linear-gradient(80deg, white, #D0F7D1);
+  background: linear-gradient(311deg, #000000, #f3f2f2, #42466c);
+    background-size: 600% 600%;
+   animation: AnimationName 15s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:14% 0%}
+    50%{background-position:87% 100%}
+    100%{background-position:14% 0%}
 }
 
 .second-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 25px;
   height: 90vh;
 }
@@ -42,6 +51,14 @@ body{
 }
 
 .third-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 10px;
+}
+
+.fourth-container {
+  display: flex;
+  flex-direction: column;
   margin-top: 10px;
 }
 
@@ -80,22 +97,20 @@ ul {
   transform: scale(1.2);
 }
 
+.pro-img {
+  max-width: 860px;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
 .link-holder {
+  display: flex;
+  justify-content: space-around;
   
-}
-
-.github-pic {
-  width: 15%;
-}
-
-.codepen-pic {
-  width: 12%;
-}
-
-.discord-pic {
-  width: 12%;
-}
-
-.link-pic {
-  width: 15%;
 }
